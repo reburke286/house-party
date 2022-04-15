@@ -1,0 +1,22 @@
+{
+  "name": "house-party",
+  "version": "1.0.0",
+  "description": "House partaaayyyy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reburke286/house-party.git"
+  },
+  "author": "Becca Burke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reburke286/house-party/issues"
+  },
+  "homepage": "https://github.com/reburke286/house-party#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.background{
+  position: relative;
+}
+
+.background img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.button-grid {
+    z-index: 100;
+    width: 80%;
+}
+
+.button-div {
+    border-radius: 20px;
+    background: rgba(255,255,255,0.5);
+    padding: 45px 45px;
+    margin: 20px auto;
+    border: solid 1px black;
+}
+
+.button-div img {
+    width: 100%;
+    height: auto;
+    opacity: .4;
+    z-index: -1;
+}
+
+.btn {
+    font-size: 3em !important;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-content {
+    padding: 10px 10px;
+    background-color: rgb(224, 255, 235);
+}
+
+.info-headers {
+    font-family: 'Bree Serif', serif;
+    font-size: 22px;
+}
+
+.modal p {
+    font-size: 20px;
+}
+
+.modal h5 {
+    font-family: 'Bree Serif', serif;
+    font-size: 36px;
+}
+
+a {
+    font-family: 'Bree Serif', serif;
+}
