@@ -52,6 +52,10 @@ body {
     background-color: rgb(224, 255, 235);
 }
 
+.modal-body {
+    padding: 2rem;
+}
+
 .info-headers {
     font-family: 'Bree Serif', serif;
     font-size: 22px;
@@ -88,9 +92,14 @@ a {
     font-size: 6em;
 }
 
-.rsvp-btn {
+.rsvp-btn-div {
     border-radius: 20px;
     border: solid 1px;
+    padding: 10px 10px;
+}
+
+.rsvp-btn {
+    font-size:20px;
 }
 
 .no {
@@ -98,5 +107,42 @@ a {
 }
 
 .yes {
-    background-color: rgb(99, 231, 165);
+    background-color: rgb(147, 235, 191);
+}
+
+/* RSVP Page */
+
+.neon-rsvp {
+    font-family: 'Grape Nuts', cursive;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ef7aff,
+        0 0 82px #ef7aff,
+        0 0 92px #ef7aff,
+        0 0 102px #ef7aff,
+        0 0 151px #ef7aff;
+    font-size: 6em;
+}
+.form-container {
+    background-color: rgb(226, 204, 255);
+    top: 20px;
+    height: 350px;
+    width: 55%;
+}
+
+label {
+    font-size: 24px;
+}
+
+.see-you-soon {
+    background-color: #320544;
+    color:rgb(226, 204, 255);
+}
+
+.breadcrumb {
+    color: #320544;
+    text-decoration: none;
 }

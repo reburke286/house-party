@@ -9,14 +9,9 @@
 // })
 
 $(document).ready(function () {
-    console.log("ready!");
-
-    var infoModal = document.getElementById('infoModalBtn')
-
-    infoModal.addEventListener('click', function () {
-        console.log("listening")
+    $("#infoModalBtn").on("click", function () {
         $("#infoModal").modal("show");
-    });
+    })
 
     $("#lodgingModalBtn").on('click', function () {
         $("#lodgingModal").modal("show");
@@ -45,5 +40,13 @@ $(document).ready(function () {
         $("#registryModal").modal("hide")
         $("#rsvpModal").modal("hide")
         $("#faqModal").modal("hide")
+    })
+
+    $(".yes").on('click', function () {
+        window.location = 'rsvp.html'
+    })
+
+    $(".no").on('click', function () {
+        window.location = 'rsvp-no.html'
     })
 })

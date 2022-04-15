@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/reburke286/house-party#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
   }
 }
