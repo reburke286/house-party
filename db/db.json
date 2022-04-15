@@ -1,11 +1,5 @@
 [
-    {"name": "Zack",
-    "coming": "yes",
-"plus-ones": []},
+  { "name": "Zack", "coming": "yes", "plus-ones": [] },
 
-    {"name": "Becca",
-        "coming": "yes",
-        "plus-ones": []}
-
-
+  { "name": "Becca", "coming": "yes", "plus-ones": [] }
 ]
