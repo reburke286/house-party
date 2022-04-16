@@ -24,6 +24,13 @@
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Grape+Nuts&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Partyyyyy</title>
@@ -129,9 +136,11 @@
                   <span class="info-headers">Where:</span>
                   OUR NEW HOUSE!!
                   <a
+                    class="sm-directions-icon"
                     target="_blank"
                     href="https://www.google.com/maps/place/2000+Kathryn+Ct,+Chattanooga,+TN+37421/@35.0192347,-85.1254076,19z/data=!4m5!3m4!1s0x886064a2d9362cb3:0x3d6041a188634e7d!8m2!3d35.0192347!4d-85.1248604"
-                    ><i class="fa-solid fa-location-dot"></i
+                  >
+                    <i class="fa-solid fa-location-dot"></i
                   ></a>
                 </p>
                 <p>
@@ -243,11 +252,20 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="row">
-              <div class="col-12">
-                <h6>Address</h6>
-                <p class="mx-0">2000 Kathryn Court</p>
+            <div class="row text-center">
+              <div class="col-5 rsvp-btn-div address">
+                <p class="address-header">Address</p>
+                <p>2000 Kathryn Court</p>
                 <p>Chattanooga, TN 37421</p>
+              </div>
+              <div class="col-2"></div>
+              <div class="col-5">
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/2000+Kathryn+Ct,+Chattanooga,+TN+37421/@35.0192347,-85.1254076,19z/data=!4m5!3m4!1s0x886064a2d9362cb3:0x3d6041a188634e7d!8m2!3d35.0192347!4d-85.1248604"
+                    ><i class="fa-solid fa-location-dot fa-5x"></i></a
+                ></span>
               </div>
             </div>
           </div>
@@ -279,10 +297,10 @@
               <div class="col-12">
                 <p>
                   Zack thinks it's gauche to have a registry for a housewarming
-                  party. I think it's okay since it's a defacto wedding. We're
+                  party. I think it's okay since it's a de facto wedding. We're
                   torn. What do you think? Either way we're probably not
                   actually going to register. Too much effort. If you're so
-                  moved stick a crisp Franklin in Zack's boxer briefs.
+                  moved stick a crisp Franklin in Zack's G-string.
                 </p>
               </div>
             </div>
@@ -312,28 +330,54 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="rsvp-btn-div yes text-center col-5">
-                <span class="align-middle">
-                  <button
-                    class="btn rsvp-btn btn-primary-outline"
-                    href="rsvp.html"
-                  >
-                    Yes, I'm coming!
-                  </button>
-                </span>
-              </div>
-              <div class="col-2"></div>
-              <div class="text-center no rsvp-btn-div col-5">
-                <button class="btn rsvp-btn btn-primary-outline">
-                  No, I'm not coming because I never liked you guys!!
-                </button>
-              </div>
-            </div>
-            <div class="row mt-4">
               <p>
                 We don't currently have a TELL ME BY date, but you know,
                 eventually I'll start hounding you all.
               </p>
+            </div>
+            <div class="container form-container pt-5">
+              <form class="form-style">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Your Full Name</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    placeholder="Monica Gellar"
+                  />
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="yes-rsvp"
+                  />
+                  <label class="form-check-label" for="yes-rsvp"> YES! </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="no-rsvp"
+                  />
+                  <label class="form-check-label" for="no-rsvp"> No ... </label>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"
+                    >Everyone in your group</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="group"
+                    rows="3"
+                    placeholder="Chandler Bing, Ross Gellar, Baby Emma"
+                  ></textarea>
+                </div>
+                <div class="mt-3 rsvp-btn-div">
+                  <button class="btn rsvp-btn btn-outline-dark">RSVP</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

@@ -89,25 +89,43 @@ a {
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-    font-size: 6em;
+    font-size: 5em;
 }
 
 .rsvp-btn-div {
-    border-radius: 20px;
-    border: solid 1px;
-    padding: 10px 10px;
+    padding: 0px 10px;
 }
 
 .rsvp-btn {
     font-size:20px;
+    background-color: rgb(118, 235, 177);
 }
 
-.no {
-    background-color: rgb(255, 221, 221);
+.rsvp-btn:hover {
+    background-color: rgb(186, 247, 199);
+    border: solid 1px rgb(118, 235, 177);
 }
 
-.yes {
-    background-color: rgb(147, 235, 191);
+.address {
+    padding: 10px 0px;
+    margin: -5px 0px;
+    line-height: .8;
+}
+
+.address p {
+    font-size: 24px;
+}
+
+.address-header {
+    font-family: 'Bree Serif', serif;
+}
+
+i {
+    color: rgb(255, 153, 153);
+}
+
+.sm-directions-icon {
+    padding-left: 10px;
 }
 
 /* RSVP Page */
@@ -124,21 +142,33 @@ a {
         0 0 92px #ef7aff,
         0 0 102px #ef7aff,
         0 0 151px #ef7aff;
-    font-size: 6em;
+    font-size: 5em;
 }
 .form-container {
-    background-color: rgb(226, 204, 255);
-    top: 20px;
-    height: 350px;
-    width: 55%;
+    background-color: rgb(186, 247, 199);
+    width: 90%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.form-style {
+    margin: -30px 15px;
+}
+
+.form-group {
+    padding: 20px 10px;
+}
+
+.form-check {
+    padding-left: 2.3em;
 }
 
 label {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .see-you-soon {
-    background-color: #320544;
+    background-color: #05441f;
     color:rgb(226, 204, 255);
 }
 
