@@ -5,6 +5,8 @@ body {
 
 .background{
   position: relative;
+  /* background-color: rgb(60,131,57);
+  z-index: -100; */
 }
 
 .background img {
@@ -14,7 +16,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 150%;
     z-index: -1;
 }
 
@@ -40,6 +42,10 @@ body {
 
 .btn-lg {
     font-size: 3em !important;
+}
+
+.btn-lg:hover {
+    cursor: pointer;
 }
 
 .btn:focus {
@@ -167,12 +173,70 @@ label {
     font-size: 20px;
 }
 
-.see-you-soon {
-    background-color: #05441f;
-    color:rgb(226, 204, 255);
+/* Media Queries */
+
+@media (max-width: 850px) {
+    .neon {
+        font-size: 3em;
+    }
+
+    .btn-lg {
+        font-size: 2em !important;
+    }
+
+    .button-div {
+        padding: 30px 0px;
+        margin: 3px auto;
+    }
+
+    .info-headers {
+        font-size: 20px;
+    }
+
+    .modal p {
+        font-size: 18px;
+    }
+
+    #chatt {
+        font-size: 16px;
+    }
+
 }
 
-.breadcrumb {
-    color: #320544;
-    text-decoration: none;
+@media (max-width: 576px) {
+    .neon {
+        font-size: 2em;
+    }
+
+    .button-div {
+        padding: 0px 0px;
+        margin: 3px auto;
+    }
+
+    .btn-lg {
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .neon {
+        font-size: 1em;
+    }
+
+    .button-div {
+        margin: 0px auto;
+    }
+
+    .form-style {
+        margin: -50px 0px;
+    }
+
+    #chatt {
+        font-size: 12px;
+    }
+
+    #kathryn {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
 }

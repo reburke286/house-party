@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    console.log('hi')
 
     //Modal Functions
     $("#infoModalBtn").on("click", function () {
@@ -65,8 +66,6 @@ $(document).ready(function () {
             answer: answer
         }
 
-        console.log(newRSVP)
-
         saveRSVP(newRSVP).then(() => {
             $("#name").val("")
             $("#group").val("")
@@ -74,7 +73,6 @@ $(document).ready(function () {
             $('#no-rsvp').prop('checked', false);
             getRSVPs();
             $("#rsvpModal").modal("hide");
-
         })
     }
 
