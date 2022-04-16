@@ -71,8 +71,9 @@ $(document).ready(function () {
             $("#group").val("")
             $('#yes-rsvp').prop('checked', false);
             $('#no-rsvp').prop('checked', false);
-            getRSVPs();
             $("#rsvpModal").modal("hide");
+            alert("Congratulations! You've just done the very noble thing of telling two people in the midst of planning a huge party whether or not you're coming. We love you.")
+            getRSVPs();
         })
     }
 
@@ -84,19 +85,15 @@ $(document).ready(function () {
             }
         });
 
-    const saveRSVP = rsvp => {
-
+    const saveRSVP = rsvp =>
         fetch('/api/rsvps', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(rsvp)
-        }).then((data) => {
-            console.log(data)
-            alert("Congratulations! You've just done the very noble thing of telling two people in the midst of planning a huge party whether or not you're coming. We love you.")
         })
-    }
+
 
 
 })
