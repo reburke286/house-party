@@ -221,13 +221,22 @@ label {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+    .background {
+        height: 600px;
+    }
+
     .neon {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .button-div {
-        margin: 0px auto;
+        margin: 12px auto;
+        padding: 12px 10px;
+    }
+
+    .btn-lg {
+        font-size: 1.5em !important;
     }
 
     .form-style {
