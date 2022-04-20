@@ -136,6 +136,12 @@ i {
     padding-left: 10px;
 }
 
+/* FAQ Cards */
+.faq-card {
+    border-radius: 20px;
+    background-color: rgb(186, 247, 199);
+}
+
 /* RSVP Page */
 
 .neon-rsvp {
